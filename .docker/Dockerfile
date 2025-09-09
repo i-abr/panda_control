@@ -49,3 +49,4 @@ RUN source /opt/ros/noetic/setup.sh && catkin_make -DCMAKE_BUILD_TYPE=Release -D
 # Add lines to the bashrc file that source ROS
 RUN echo "source /ros_entrypoint.sh" >> /root/.bashrc
 RUN echo "source /catkin_ws/devel/setup.bash" >> /root/.bashrc
+RUN echo "set +e" >> /root/.bashrc
